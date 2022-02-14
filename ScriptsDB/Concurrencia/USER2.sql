@@ -1,8 +1,6 @@
-
------------------------------------USER 2-------------------------
 Declare 
 	@v_product_id int = 4, 
-	@v_precio2 decimal = 350,
+	@v_precio2 decimal = 650,
 	@v_last_update timestamp 
 
 	DECLARE	@return_value int

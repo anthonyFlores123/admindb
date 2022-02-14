@@ -1,15 +1,15 @@
-CREATE VIEW `VCustomer_SuppliersbyCity`
+CREATE VIEW VCustomer_and_Suppliers_by_City
 AS
-SELECT 
-   City, 
-   CompanyName, 
-   ContactName, 
-   'Customers' AS Relationship 
-FROM Customers
-UNION  -- Union two result sets (of same column numbers), remove duplicates
-SELECT City, 
-   CompanyName, 
-   ContactName, 
-   'Suppliers'
-FROM Suppliers 
-ORDER BY City, CompanyName;
+SELECT
+ City,
+ CompanyName,
+ ContactName,
+ 'Customers' AS Relationship 
+FROM northwind.Customers
+UNION 
+SELECT City,
+ CompanyName,
+ ContactName,
+ 'Suppliers'
+FROM northwind.Suppliers 
+
