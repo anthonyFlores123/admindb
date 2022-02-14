@@ -9,4 +9,4 @@ GROUP BY
 	customers.customerid,
 	MONTH(Orders.orderDate), 
 	 YEAR(Orders.orderDate) 
-Order by customers.customerid
+Order by customers.customerid

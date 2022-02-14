@@ -1,4 +1,4 @@
--- List all products grouped by category
+-- Todos los productos agrupados por categorias
 CREATE VIEW `VProductsbyCategory`
 AS
 SELECT 
